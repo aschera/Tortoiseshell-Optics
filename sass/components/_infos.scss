@@ -4,7 +4,9 @@
 
 .information-box {
     display: flex;
-    justify-content:center;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 .information {
@@ -27,7 +29,6 @@
         justify-content: center;
         align-items: center;
         width:100%;
-
     }
 }
 
@@ -39,7 +40,7 @@
     }
     .information {
         width:100%;
-        
+        margin: 0;
 
         &--header {
             width: 100%;
@@ -49,7 +50,7 @@
         &--description {
             width:100%;
             padding-bottom: 4rem;
-    
+            padding-left: 0.5rem;
         }
     }
 

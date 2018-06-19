@@ -24,5 +24,11 @@
 
 /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
   @media only screen and (max-width: 470px) {
-  
+    .footer {
+      justify-content: center;
+    }
+
+    .footer--text{
+      display: none;
+    }
   }

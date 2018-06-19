@@ -14,6 +14,9 @@ body {
 main {
   margin-bottom: 5rem; }
 
+.mobile-nav {
+  display: none; }
+
 /*  *-*-*-*-*-*-*-*-*-* Fonts *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-**/
 h1,
@@ -70,12 +73,18 @@ a {
 .icons {
   height: 4rem;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center; }
 
+.paper,
+.ruler,
+.truck {
+  width: 3.5rem; }
+
 .icon {
-  width: 5rem;
-  padding-left: 6rem;
-  padding-right: 6rem; }
+  width: 33%;
+  min-width: 5rem;
+  text-align: center; }
   .icon--image {
     display: flex;
     justify-content: center;
@@ -90,6 +99,21 @@ a {
     .icon--description p {
       padding-top: 1rem;
       text-align: center; }
+
+/* ^*^*^*^*^*^* MEDIA queries medium screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 1024px) {
+  .truck {
+    order: 3; }
+  .ruler {
+    order: 2; }
+  .paper {
+    order: 1; }
+  .exam {
+    order: 4; }
+  .delivery {
+    order: 6; }
+  .fitting {
+    order: 5; } }
 
 /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
 @media only screen and (max-width: 470px) {
@@ -124,7 +148,9 @@ a {
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .information-box {
   display: flex;
-  justify-content: center; }
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 3rem; }
 
 .information {
   width: 35%;
@@ -149,13 +175,15 @@ a {
     flex-direction: column;
     justify-content: center; }
   .information {
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
     .information--header {
       width: 100%;
       justify-content: center; }
     .information--description {
       width: 100%;
-      padding-bottom: 4rem; }
+      padding-bottom: 4rem;
+      padding-left: 0.5rem; }
   .a1 {
     order: 1; }
   .b1 {
@@ -180,6 +208,12 @@ a {
     height: 1.5rem; }
 
 /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 470px) {
+  .footer {
+    justify-content: center; }
+  .footer--text {
+    display: none; } }
+
 /*  *-*-*-*-*-*-*-*-*-*  GRID to keep content centered *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 .container {
@@ -238,7 +272,11 @@ a {
   .headline {
     top: 5rem;
     right: 2rem;
-    padding: 0.75rem 4rem; } }
+    padding: 0.75rem 4rem; }
+  .mobile-nav {
+    display: none; }
+  .main-nav {
+    display: inline; } }
 
 /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
 @media only screen and (max-width: 470px) {
