@@ -26,3 +26,17 @@ a {
     color: $color-text-light;
     text-decoration: none;
   }
+
+  /* ^*^*^*^*^*^* MEDIA queries medium screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.33rem;
+    }
+}
+
+/* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 470px) {
+    h2 {
+        font-size: 1rem;
+    }
+}

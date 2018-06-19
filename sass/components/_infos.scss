@@ -30,3 +30,31 @@
 
     }
 }
+
+/* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 470px) {
+    .information-box {
+        flex-direction: column;
+        justify-content:center;
+    }
+    .information {
+        width:100%;
+        
+
+        &--header {
+            width: 100%;
+            justify-content: center;
+            }
+    
+        &--description {
+            width:100%;
+            padding-bottom: 4rem;
+    
+        }
+    }
+
+    .a1 { order: 1;}
+    .b1 { order: 3;}
+    .a2 { order: 2;}
+    .b2 { order: 4;}
+}
