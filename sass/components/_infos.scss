@@ -1,0 +1,32 @@
+
+/*  *-*-*-*-*-*-*-*-*-* Information *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.information-box {
+    display: flex;
+    justify-content:center;
+}
+
+.information {
+    width:35%;
+    margin-left:5%;
+
+    &--header {
+        background-color: $color-bg-main;
+        width: 10rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.25rem;
+
+        display: flex;
+        justify-content: flex-start;
+        }
+
+    &--description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+
+    }
+}

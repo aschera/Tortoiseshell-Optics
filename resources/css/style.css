@@ -11,6 +11,9 @@ body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.4; }
 
+main {
+  margin-bottom: 5rem; }
+
 /*  *-*-*-*-*-*-*-*-*-* Fonts *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-**/
 h1,
@@ -23,8 +26,12 @@ h2 {
   color: black;
   text-transform: uppercase; }
 
+h3 {
+  color: white; }
+
 h2,
 h3 {
+  text-transform: uppercase;
   font-weight: bold; }
 
 a {
@@ -38,6 +45,9 @@ a {
 
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
+
+.u-padding-top-small {
+  padding-top: 1rem; }
 
 /*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
@@ -65,8 +75,43 @@ a {
       padding-top: 1rem;
       text-align: center; }
 
+/*  *-*-*-*-*-*-*-*-*-* Information *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.information-box {
+  display: flex;
+  justify-content: center; }
+
+.information {
+  width: 35%;
+  margin-left: 5%; }
+  .information--header {
+    background-color: cadetblue;
+    width: 10rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    display: flex;
+    justify-content: flex-start; }
+  .information--description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+
 /*  *-*-*-*-*-*-*-*-*-* Footer *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*- */
+.footer {
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center; }
+  .footer--text {
+    padding-left: 1rem; }
+  .footer--logo img {
+    height: 1.5rem; }
+
 /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
 /*  *-*-*-*-*-*-*-*-*-*  GRID to keep content centered *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- */

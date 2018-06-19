@@ -13,8 +13,12 @@ h2 {
     color: $color-text-dark; 
     text-transform: uppercase;
 }
+h3 {
+    color: $color-text-light; 
+}
 h2,
 h3 {
+    text-transform: uppercase;
     font-weight: bold;
 }
 
