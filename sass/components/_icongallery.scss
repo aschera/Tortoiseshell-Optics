@@ -1,0 +1,39 @@
+
+/*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.icons {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    &--image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        & img{
+            width: 3.5rem;
+        }
+        
+    }
+
+    &--description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+
+        & p {
+           padding-top: 1rem; 
+           text-align: center;
+        }
+    }
+}

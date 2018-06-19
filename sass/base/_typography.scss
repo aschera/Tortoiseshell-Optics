@@ -1,2 +1,24 @@
 
+/*  *-*-*-*-*-*-*-*-*-* Fonts *-*-*-*-*-*-*-*-*-* */
+/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-**/
 
+
+h1,
+h3 {
+  font-size: 1rem; 
+}
+h2 {
+    font-size: 2rem;
+    line-height:  1.2; 
+    color: $color-text-dark; 
+    text-transform: uppercase;
+}
+h2,
+h3 {
+    font-weight: bold;
+}
+
+a {
+    color: $color-text-light;
+    text-decoration: none;
+  }

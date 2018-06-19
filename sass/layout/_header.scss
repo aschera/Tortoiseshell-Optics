@@ -2,13 +2,52 @@
 
 /*  *-*-*-*-*-*-*-*-*-* Header*-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-* */
+.company {
+  color: $color-text-light; 
+}
 
-  
+.company .container {
+  background-color: $color-bg-main;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logo {
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;  }
+
 /*  *-*-*-*-*-*-*-*-*-* Banner *-*-*-*-*-*-*-*-*-* */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-**/
- 
-  
-  /* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
-  @media only screen and (max-width: 470px) {
+.main-banner {
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem; }
 
+.headline {
+  position: absolute;
+  top: 13rem;
+  right: -2rem;
+  padding: 1.5rem 5rem;
+  background-color: $color-text-light;}
+
+
+/* ^*^*^*^*^*^* MEDIA queries small screen ^*^*^*^*^*^* */
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem; }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem; }
+  .headline h4 {
+    font-size: .77rem; }
+  .headline h1 {
+    font-size: 1rem; } 
   }
