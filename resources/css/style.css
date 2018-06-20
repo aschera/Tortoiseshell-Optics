@@ -18,7 +18,7 @@ main {
   display: none; }
 
 /*  *-*-*-*-*-*-*-*-*-* Fonts *-*-*-*-*-*-*-*-*-* */
-/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-**/
+/*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-**/
 h1,
 h3 {
   font-size: 1rem; }
@@ -51,7 +51,7 @@ a {
   h2 {
     font-size: 1rem; } }
 
-/*  *-*-*-*-*-*-*-*-*-* utility classes *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* utility classes *-*-*-*-*-*-*-*-*- */
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .u-margin-top-small {
   margin-top: 3rem; }
@@ -68,10 +68,15 @@ a {
   .u-margin-bottom-small {
     margin-bottom: 3.77rem; } }
 
-/*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*/
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .icons {
   height: 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.icon-center {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
@@ -82,6 +87,7 @@ a {
   width: 3.5rem; }
 
 .icon {
+  max-width: 33%;
   width: 33%;
   min-width: 5rem;
   text-align: center; }
@@ -144,7 +150,7 @@ a {
   .fitting {
     order: 4; } }
 
-/*  *-*-*-*-*-*-*-*-*-* Information *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* Information *-*-*-*-*-*-*-*-*-*-*-*/
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .information-box {
   display: flex;
@@ -153,6 +159,7 @@ a {
   margin-top: 3rem; }
 
 .information {
+  flex: none;
   width: 35%;
   margin-left: 5%; }
   .information--header {
@@ -268,7 +275,8 @@ a {
   .company {
     padding-top: 0; }
   .main-banner {
-    height: 22rem; }
+    height: 22rem;
+    background-position-x: 30%; }
   .headline {
     top: 5rem;
     right: 2rem;
@@ -304,5 +312,3 @@ a {
 nav ul li {
   display: inline;
   margin: 1rem 2rem; }
-
-/* ^*^*^*^*^*^* MEDIA queries medium screen ^*^*^*^*^*^* */

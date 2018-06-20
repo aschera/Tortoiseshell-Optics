@@ -1,5 +1,5 @@
 
-/*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*-*-*- */
+/*  *-*-*-*-*-*-*-*-*-* Icon gallery *-*-*-*-*-*-*-*-*-*-*-*/
 /*  *-*-*-*-*-*-*-*-*-* *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 .icons {
@@ -8,6 +8,13 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+
+.icon-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .paper,
 .ruler,
 .truck{
@@ -15,7 +22,8 @@
 }
 
 .icon {
-    width: 33%;
+    max-width: 33%;
+    width:33%;
     min-width:5rem;
     text-align: center;
 
